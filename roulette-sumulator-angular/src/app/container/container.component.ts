@@ -12,11 +12,14 @@ import { ServiceService } from '../services/service.service';
 })
 export class ContainerComponent {
 
+  data:any;
+
   constructor(private rouletteService: ServiceService) {}
 
   ngOnInit(): void {
     this.rouletteService.getStats().subscribe((data) => {
       console.log(data);
+      this.data = data;
     });
   }
 

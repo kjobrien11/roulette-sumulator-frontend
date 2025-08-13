@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input,OnInit } from '@angular/core';
 import { StatsBoxComponent } from '../stats-box/stats-box.component';
+import {  } from '@angular/core';
 
 @Component({
   selector: 'app-stats',
@@ -7,6 +8,11 @@ import { StatsBoxComponent } from '../stats-box/stats-box.component';
   templateUrl: './stats.component.html',
   styleUrl: './stats.component.css'
 })
-export class StatsComponent {
+export class StatsComponent implements OnInit{
+  @Input() data!:any;
+
+  ngOnInit(){
+    console.log("HI",this.data)
+  }
 
 }
