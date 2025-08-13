@@ -1,3 +1,40 @@
 .container{
     color: white;
 }
+*{
+    padding: 0rem;
+    margin: 0rem;
+}
+/* .spinner-spins-container, .stats-container{
+    border: solid;
+    border-color: white;
+} */
+.spinner-spins-container{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+
+}
+
+.stats-container{
+    display: flex;
+    justify-content: center;
+    height: 38vh;
+}
+
+/* .stats, .spinner, .spins {
+    border: solid;
+    border-color: red;
+} */
+
+.spinner {
+    flex: 2;
+}
+
+.spins {
+    flex: 1;
+}
+
+.stats{
+    flex: 1;
+}
