@@ -10,10 +10,10 @@
 
 .stats-box-container > * {
     margin: 0rem;   
-    padding: 1rem;
+    padding: 0.85rem;
 }
-h2 {
-    font-size: 2rem;
+h1{
+    font-size: 3rem;
 }
 
 .border{
