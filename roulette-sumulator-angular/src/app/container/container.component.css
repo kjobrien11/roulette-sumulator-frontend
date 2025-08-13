@@ -5,10 +5,10 @@
     padding: 0rem;
     margin: 0rem;
 }
-/* .spinner-spins-container, .stats-container{
+.spinner-spins-container, .stats-container{
     border: solid;
     border-color: white;
-} */
+}
 .spinner-spins-container{
     display: flex;
     justify-content: center;

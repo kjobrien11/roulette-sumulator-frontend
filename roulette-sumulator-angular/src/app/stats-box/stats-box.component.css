@@ -1,0 +1,22 @@
+.stats-box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.stats-box-container > * {
+    margin: 0rem;   
+    padding: 1rem;
+}
+h2 {
+    font-size: 2rem;
+}
+
+.border{
+    border: solid;
+    border-color: white;
+}
