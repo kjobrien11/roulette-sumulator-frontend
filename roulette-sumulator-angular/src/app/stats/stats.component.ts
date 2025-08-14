@@ -25,8 +25,34 @@ export class StatsComponent implements OnInit{
   formatRedBlackGreen(): string {
     const red = (this.data.reds / this.data.total_spins) * 100;
     const black = (this.data.blacks / this.data.total_spins) * 100;
-    const green = (this.data.greens / this.data.total_spins) * 100;
-    return `${red.toFixed(2)}%:${black.toFixed(2)}%:${green.toFixed(2)}%`;
+    return `${red.toFixed(2)}%:${black.toFixed(2)}%`;
+  }
+
+  formatMostCommonNumber():string {
+    const mostCommon = this.data.most_common_number;
+    const mostCommonAmount = this.data.most_common_count;
+    return `${mostCommon} (${mostCommonAmount})`;
+  }
+
+  formatZeroRate():string{
+    const zero = (this.data.zero)/ (this.data.total_spins) * 100;
+    return `${zero.toFixed(2)}%`;
+  }
+
+  formatParityStreak():string{
+    return this.data.current_parity_streak.parity + " ("+this.data.current_parity_streak.streak+")";
+  }
+
+  formatMaxParityStreak():string{
+    return this.data.max_parity_streak.parity + " ("+this.data.max_parity_streak.streak+")";
+  }
+
+  formatColorStreak():string{
+    return this.data.current_color_streak.color + " ("+this.data.current_color_streak.streak+")";
+  }
+
+  formatMaxColorStreak():string{
+    return this.data.max_color_streak.color + " ("+this.data.max_color_streak.streak+")";
   }
 
 }

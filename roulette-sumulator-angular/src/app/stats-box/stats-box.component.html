@@ -1,4 +1,6 @@
-<div class ="stats-box-container border">
-    <h1>{{title}}</h1>
-    <h1>{{data}}</h1>
+<div class ="stats-box-container border" [ngSwitch]="htag">
+    <h2>{{title}}</h2>
+    <h1 *ngSwitchCase="'h1'">{{data}}</h1>
+    <h2 *ngSwitchCase="'h2'">{{data}}</h2>
+    <h3 *ngSwitchCase="'h3'">{{data}}</h3>
 </div>
