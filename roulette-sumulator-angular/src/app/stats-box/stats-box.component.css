@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     height: 100%;
+    color: white;
 }
 
 .stats-box-container > * {
@@ -23,7 +24,7 @@ h3{
     font-size: 1rem;
 }
 
-.border{
+/* .border{
     border: solid;
     border-color: white;
-}
+} */

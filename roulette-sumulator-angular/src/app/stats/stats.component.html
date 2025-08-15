@@ -1,13 +1,24 @@
-<div class = "stats-master-container">
-    <!-- <app-stats-box title="Odd/Event" [data]="formatOddEven()" htag="h2" ></app-stats-box> -->
-    <app-stats-box title="Parity Streak" [data]="formatParityStreak()" ></app-stats-box>
-    <app-stats-box title="Max Parity Streak" [data]="formatMaxParityStreak()" ></app-stats-box>
-    <app-stats-box title="Most Common #" [data]="formatMostCommonNumber()" ></app-stats-box>
-    <app-stats-box title="Total Spins" [data]="data.total_spins" ></app-stats-box>
-    <!-- <app-stats-box title="Red/Black" [data]="formatRedBlackGreen()" htag="h2" ></app-stats-box> -->
-    <app-stats-box title="Color Streak" [data]="formatColorStreak()" ></app-stats-box>
-    <app-stats-box title="Max Color Streak" [data]="formatMaxColorStreak()" ></app-stats-box>
-    <app-stats-box title="0/00%" [data]="formatZeroRate()" ></app-stats-box>
-    <app-stats-box title="Spins" data="2909" ></app-stats-box>
+<div class = "outer">
+    <div class = "inner">
+        <app-stats-box title="Odd/Even" [data]="formatOddEven()" htag="h2"></app-stats-box>
+        <app-stats-box title="Parity Streak" [data]="formatParityStreak()"></app-stats-box>
+        <app-stats-box title="Max Parity Streak" [data]="formatMaxParityStreak()"></app-stats-box>
+        <app-stats-box title="Most Common #" [data]="formatMostCommonNumber()"></app-stats-box>
+        <app-stats-box title="Total Spins" [data]="data.total_spins"></app-stats-box>
+        <app-stats-box title="Red/Black" [data]="formatRedBlackGreen()" htag="h2"></app-stats-box>
+        <app-stats-box title="Color Streak" [data]="formatColorStreak()"></app-stats-box>
+        <app-stats-box title="Max Color Streak" [data]="formatMaxColorStreak()"></app-stats-box>
+        <app-stats-box title="0/00%" [data]="formatZeroRate()"></app-stats-box>
+    </div>
+    <div class = "inner">
+        <app-stats-box title="Odd/Even" [data]="formatOddEven()" htag="h2"></app-stats-box>
+        <app-stats-box title="Parity Streak" [data]="formatParityStreak()"></app-stats-box>
+        <app-stats-box title="Max Parity Streak" [data]="formatMaxParityStreak()"></app-stats-box>
+        <app-stats-box title="Most Common #" [data]="formatMostCommonNumber()"></app-stats-box>
+        <app-stats-box title="Total Spins" [data]="data.total_spins"></app-stats-box>
+        <app-stats-box title="Red/Black" [data]="formatRedBlackGreen()" htag="h2"></app-stats-box>
+        <app-stats-box title="Color Streak" [data]="formatColorStreak()"></app-stats-box>
+        <app-stats-box title="Max Color Streak" [data]="formatMaxColorStreak()"></app-stats-box>
+        <app-stats-box title="0/00%" [data]="formatZeroRate()"></app-stats-box>
+    </div>
 </div>
-
