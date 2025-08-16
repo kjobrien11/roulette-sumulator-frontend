@@ -12,14 +12,14 @@
 .spinner-spins-container{
     display: flex;
     justify-content: center;
-    height: 60vh;
+    height: 70vh;
 
 }
 
 .stats-container{
     display: flex;
     justify-content: center;
-    height: 38vh;
+    height: 30vh;
 }
 
 /* .stats, .spinner, .spins {
