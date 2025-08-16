@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  .container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32,113,77);
+  }
+
+  .img-container{
+    position: relative;
+    background-color: rgb(32,113,77);
+  }
+  
+  .img-container img {
+    height: 60vh;
+    width: 60vh;
+    object-fit: contain;
+    transform-origin: center center;
+    background-color: transparent;
+  }
+
+  .ball {
+    position: absolute;
+    top: 15%;
+    left: 48%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid black;
+  
+    box-shadow: 
+      2px 2px 0 black,
+    -2px -2px 0 black,
+
+  }
+  
+
+  .spin-red {
+    animation: spinred 4s ease-out forwards;
+  }
+  
+  @keyframes spinred {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(1455deg);
+    }
+  }
+
+  .spin-green {
+    animation: spingreen 4s ease-out forwards;
+  }
+  
+  @keyframes spingreen {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(1440deg);
+    }
+  }
+
+  .spin-black {
+    animation: spinblack 4s ease-out forwards;
+  }
+  
+  @keyframes spinblack{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(1410deg);
+    }
+  }
+

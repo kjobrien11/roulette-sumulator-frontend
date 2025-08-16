@@ -1,4 +1,4 @@
-import { Component, Input,OnInit } from '@angular/core';
+import { Component, Input,OnChanges } from '@angular/core';
 import { StatsBoxComponent } from '../stats-box/stats-box.component';
 import {  } from '@angular/core';
 
@@ -8,11 +8,11 @@ import {  } from '@angular/core';
   templateUrl: './stats.component.html',
   styleUrl: './stats.component.css'
 })
-export class StatsComponent implements OnInit{
+export class StatsComponent implements OnChanges{
   @Input() data!:any;
 
-  ngOnInit(){
-    console.log("HI",this.data)
+  ngOnChanges(){
+   console.log("test")
 
   }
 

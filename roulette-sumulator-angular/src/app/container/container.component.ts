@@ -22,7 +22,7 @@ export class ContainerComponent implements OnInit, OnDestroy {
     this.spinWheel();
     this.interval = setInterval(() => {
       this.spinWheel();
-    }, 5000);
+    }, 10000);
   }
 
   ngOnDestroy(): void {
