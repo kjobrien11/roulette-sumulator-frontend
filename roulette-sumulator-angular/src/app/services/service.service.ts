@@ -15,4 +15,9 @@ export class ServiceService {
     console.log("stats url")
     return this.http.get<any>(this.statsUrl);
   }
+
+  getSpin(): Observable<any> {
+    console.log("spin url")
+    return this.http.get<any>(this.spinUrl);
+  }
 }
