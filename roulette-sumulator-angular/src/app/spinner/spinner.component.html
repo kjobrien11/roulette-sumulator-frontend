@@ -2,11 +2,8 @@
     <div class="img-container">
       <img [src]="'assets/wheel_final.png'" 
            alt="wheel"
-           [ngClass]="{ 'spin-black': isSpinning}">
+           [ngClass]="{ 'spin-red': isSpinning && isRed, 'spin-green': isSpinning && isGreen, 'spin-black': isSpinning && isBlack}">
     </div>
   </div>
-  
-  <div class="controls">
-    <button (click)="startSpin()">Spin</button>
-  </div>
+
   

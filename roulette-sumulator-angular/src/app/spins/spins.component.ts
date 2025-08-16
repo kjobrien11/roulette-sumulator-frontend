@@ -21,15 +21,19 @@ export class SpinsComponent implements OnChanges {
   }
 
   spin(spin:any){
-    if(this.spin_sample_data.length +1 > this.MAX_LIST_SIZE){
-      this.spin_sample_data.pop();
-    }
-    this.spin_sample_data.unshift({
-      "value": spin.value,
-      "color": spin.color,
-      "parity": spin.parity
-      })
-    console.log("SPIN")
+    setTimeout(() => {
+      if (this.spin_sample_data.length + 1 > this.MAX_LIST_SIZE) {
+        this.spin_sample_data.pop();
+      }
+  
+      this.spin_sample_data.unshift({
+        "value": spin.value,
+        "color": spin.color,
+        "parity": spin.parity
+      });
+  
+      console.log("SPIN finished!");
+    }, 5000);
   }
 
 }
