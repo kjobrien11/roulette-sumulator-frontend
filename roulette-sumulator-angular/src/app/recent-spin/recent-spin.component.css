@@ -1,0 +1,13 @@
+.ball {
+    width: 5.75vw;
+    height: 5.75vw;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+h1{
+    font-size: 3rem;
+}

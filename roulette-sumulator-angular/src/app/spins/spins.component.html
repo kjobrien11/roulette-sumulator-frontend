@@ -1,1 +1,17 @@
-<p>spins works!</p>
+<div class = "recent-spins-container">
+    <div class = "centered-text">
+        <h1> Recent Spins</h1>
+    </div >
+        
+    <div class="spin-styling">
+        <div 
+          class="ball-styling"
+          *ngFor="let spin of spin_sample_data"
+          [ngClass]="spin.color" 
+        >
+          <app-recent-spin [value]="spin.value" [color]="spin.color"></app-recent-spin>
+        </div>
+      </div>
+</div>
+
+
