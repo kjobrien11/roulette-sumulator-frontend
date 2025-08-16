@@ -12,10 +12,8 @@ import { Input } from '@angular/core';
 export class SpinnerComponent implements OnChanges {
   @Input() current_spin!: any;
   isSpinning = false;
-  isSettling = false;
-  isBlack = false;
-  isRed = false;
-  isGreen = false;
+  currentColor: 'black' | 'red' | 'green' | null = null;
+  spinId = 0;
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['current_spin']) {
@@ -23,26 +21,15 @@ export class SpinnerComponent implements OnChanges {
     }
   }
 
-  startSpin(color: string) {
-    console.log("INSIDE with", color)
-    if (color == "black") {
-      this.isBlack = true;
-      this.isRed = false;
-      this.isGreen = false;
-    } else if (color == "red") {
-      this.isBlack = false;
-      this.isRed = true;
-      this.isGreen = false;
-    } else if (color == "green") {
-      this.isBlack = false;
-      this.isRed = false;
-      this.isGreen = true;
-    }
+  startSpin(color: 'black' | 'red' | 'green') {
+    this.currentColor = color;
+    
     this.isSpinning = false;
+    this.currentColor = null;
 
     setTimeout(() => {
       this.isSpinning = true;
-
-    });
+      this.currentColor = color;
+    }, 50);
   }
 }
