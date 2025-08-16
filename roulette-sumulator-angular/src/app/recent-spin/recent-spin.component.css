@@ -1,0 +1,13 @@
+.ball {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.6),
+    0 4px 8px rgba(0, 0, 0, 0.5),
+
+}
