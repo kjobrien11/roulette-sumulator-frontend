@@ -1,0 +1,1 @@
+chromium-browser --kiosk --hide-scrollbars --disable-overscroll-history-navigation http://localhost:4200
