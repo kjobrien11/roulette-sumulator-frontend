@@ -1,14 +1,12 @@
-  
-  <div class="controls">
-    <button (click)="startSpin()">Spin</button>
-    <button (click)="stopSpin()">Stop</button>
-  </div>
 <div class="container">
     <div class="img-container">
       <img [src]="'assets/wheel_final.png'" 
            alt="wheel"
-           [ngClass]="{ 'spinning': isSpinning }">
+           [ngClass]="{ 'spin-black': isSpinning}">
     </div>
   </div>
-
+  
+  <div class="controls">
+    <button (click)="startSpin()">Spin</button>
+  </div>
   

@@ -18,11 +18,25 @@
     transform-origin: center center;
   }
   
-  .spinning {
-    animation: spin 5s ease-out forwards;
+
+  .spin-red {
+    animation: spinred 4s ease-out forwards;
   }
   
-  @keyframes spin {
+  @keyframes spinred {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(1455deg); /* 4 full turns */
+    }
+  }
+
+  .spin-green {
+    animation: spingreen 4s ease-out forwards;
+  }
+  
+  @keyframes spingreen {
     from {
       transform: rotate(0deg);
     }
@@ -30,4 +44,16 @@
       transform: rotate(1440deg); /* 4 full turns */
     }
   }
+
+  .spin-black {
+    animation: spinblack 4s ease-out forwards;
+  }
   
+  @keyframes spinblack{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(1410deg); /* 4 full turns */
+    }
+  }

@@ -1,6 +1,5 @@
-import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
-
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-spinner',
@@ -11,15 +10,14 @@ import { Component } from '@angular/core';
 })
 export class SpinnerComponent {
   isSpinning = false;
+  isSettling = false;
 
   startSpin() {
     this.isSpinning = false;
+
     setTimeout(() => {
       this.isSpinning = true;
-    });
-  }
 
-  stopSpin() {
-    this.isSpinning = false;
-  }
+  });
+}
 }
