@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    background-color: rgb(32,113,77);
+    
   }
   
   .container {
@@ -9,13 +9,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(32,113,77);
+  }
+
+  .img-container{
+    background-color: rgb(32,113,77);
   }
   
   .img-container img {
-    height: 50vh;
-    width: 50vh;
+    height: 60vh;
+    width: 60vh;
     object-fit: contain;
     transform-origin: center center;
+    background-color: transparent;
+    
   }
   
 
