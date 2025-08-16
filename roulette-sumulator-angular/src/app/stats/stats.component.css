@@ -16,7 +16,7 @@
     align-items: center;
     gap: var(--gap);
     
-    animation: scroll 20s linear infinite;
+    animation: scroll 30s linear infinite;
 }
 @keyframes scroll {
     to {
