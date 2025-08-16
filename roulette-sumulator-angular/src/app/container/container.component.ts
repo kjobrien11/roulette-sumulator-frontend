@@ -12,16 +12,24 @@ import { ServiceService } from '../services/service.service';
 })
 export class ContainerComponent {
 
-  
+  spin:any;
   data:any;
 
   constructor(private rouletteService: ServiceService) {}
-
-  ngOnInit(): void {
+  spinWheel(){
+    this.rouletteService.getSpin().subscribe((data) => {
+      console.log(data);
+      this.spin = data;
+    });
     this.rouletteService.getStats().subscribe((data) => {
       console.log(data);
       this.data = data;
     });
   }
+  ngOnInit(): void {
+    this.spinWheel();
+  }
+
+  
 
 }
