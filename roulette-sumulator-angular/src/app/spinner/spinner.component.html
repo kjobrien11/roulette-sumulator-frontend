@@ -1,1 +1,14 @@
-<p>spinner works!</p>
+  
+  <div class="controls">
+    <button (click)="startSpin()">Spin</button>
+    <button (click)="stopSpin()">Stop</button>
+  </div>
+<div class="container">
+    <div class="img-container">
+      <img [src]="'assets/wheel_final.png'" 
+           alt="wheel"
+           [ngClass]="{ 'spinning': isSpinning }">
+    </div>
+  </div>
+
+  
