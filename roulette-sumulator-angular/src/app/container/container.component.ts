@@ -12,6 +12,7 @@ import { ServiceService } from '../services/service.service';
 })
 export class ContainerComponent {
 
+  
   data:any;
 
   constructor(private rouletteService: ServiceService) {}
