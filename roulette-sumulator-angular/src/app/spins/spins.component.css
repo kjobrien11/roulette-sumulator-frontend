@@ -8,13 +8,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 0;
+    margin-bottom: -2rem;
 }
-/* .spin-styling{
-    padding: 1rem;
-} */
+.spin-styling{
+
+    height: 10vh;
+}
 
 h1{
     font-size: 3rem;
     margin: 1rem 0;
+}
 
+.ball-styling{
+    padding: 0.25rem;
 }
