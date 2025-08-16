@@ -12,34 +12,7 @@ export class SpinsComponent implements OnChanges {
 @Input() current_spin!: any;
   MAX_LIST_SIZE = 5;
 
-  spin_sample_data: any = [
-
-    {
-      "value": "29",
-      "color": "black",
-      "parity": "odd"
-    },
-    {
-      "value": "3",
-      "color": "red",
-      "parity": "odd"
-    },
-    {
-      "value": "7",
-      "color": "red",
-      "parity": "odd"
-    },
-    {
-      "value": "33",
-      "color": "black",
-      "parity": "odd"
-    },
-    {
-      "value": "00",
-      "color": "green",
-      "parity": "neither"
-    }
-  ]
+  spin_sample_data: any = [];
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['current_spin']) {
