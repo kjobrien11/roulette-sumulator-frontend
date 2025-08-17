@@ -55,6 +55,10 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "port": 4201,
+            "host": "0.0.0.0"
+          },
           "configurations": {
             "production": {
               "buildTarget": "roulette-sumulator-angular:build:production"
