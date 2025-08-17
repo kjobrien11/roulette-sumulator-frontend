@@ -8,8 +8,8 @@ export class ServiceService {
 
   constructor(private http: HttpClient) { }
 
-  private statsUrl = 'http://127.0.0.1:8000/stats';
-  private spinUrl = 'http://127.0.0.1:8000/spin';
+  private statsUrl = 'http://127.0.0.1:8001/stats';
+  private spinUrl = 'http://127.0.0.1:8001/spin';
 
   getStats(): Observable<any> {
     console.log("stats url")
